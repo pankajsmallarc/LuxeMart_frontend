@@ -29,7 +29,7 @@ function Navbar({ children }) {
     return (
         <>
             <div className="min-h-full">
-                <Disclosure as="nav" className="bg-gray-800">
+                <Disclosure as="nav" className="bg-gray-700">
                     {({ open }) => (
                         <>
                             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -38,7 +38,7 @@ function Navbar({ children }) {
                                         <div className="flex-shrink-0">
                                             <img
                                                 className="h-8 w-8"
-                                                src="https://tse1.mm.bing.net/th?id=OIP.RPKE-8sgBYYjTS0FURVSiwHaHM&pid=Api&P=0&h=180"
+                                                src="https://1.bp.blogspot.com/-xfZ-qzG3Y_U/VuDoUu4gl4I/AAAAAAAAAIw/JiX_55duj_M/s1600/00205-3D-art-logo-design-free-logos-online-011.png"
                                                 alt="Your Company"
                                             />
                                         </div>
