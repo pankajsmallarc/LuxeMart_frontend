@@ -2,6 +2,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, ShoppingCartIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 
 const user = {
     name: 'Tom Cook',
@@ -29,7 +30,7 @@ function Navbar({ children }) {
     return (
         <>
             <div className="min-h-full">
-                <Disclosure as="nav" className="bg-gray-800">
+                <Disclosure as="nav" className="bg-gray-700">
                     {({ open }) => (
                         <>
                             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -38,7 +39,7 @@ function Navbar({ children }) {
                                         <div className="flex-shrink-0">
                                             <img
                                                 className="h-8 w-8"
-                                                src="https://tse1.mm.bing.net/th?id=OIP.RPKE-8sgBYYjTS0FURVSiwHaHM&pid=Api&P=0&h=180"
+                                                src="https://1.bp.blogspot.com/-xfZ-qzG3Y_U/VuDoUu4gl4I/AAAAAAAAAIw/JiX_55duj_M/s1600/00205-3D-art-logo-design-free-logos-online-011.png"
                                                 alt="Your Company"
                                             />
                                         </div>
@@ -64,6 +65,7 @@ function Navbar({ children }) {
                                     </div>
                                     <div className="hidden md:block">
                                         <div className="ml-4 flex items-center md:ml-6">
+                                            <Link to="/cart">
                                             <button
                                                 type="button"
                                                 className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -74,7 +76,7 @@ function Navbar({ children }) {
                                                 <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
 
                                             </button>
-
+                                            </Link>
                                             {/* Profile dropdown */}
                                             <Menu as="div" className="relative ml-3">
                                                 <div>
@@ -153,6 +155,7 @@ function Navbar({ children }) {
                                             <div className="text-base font-medium leading-none text-white">{user.name}</div>
                                             <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>
                                         </div>
+                                        <Link to="/cart">
                                         <button
                                             type="button"
                                             className="ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -163,6 +166,7 @@ function Navbar({ children }) {
                                             <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
 
                                         </button>
+                                        </Link>
                                     </div>
                                     <div className="mt-3 space-y-1 px-2">
                                         {userNavigation.map((item) => (
