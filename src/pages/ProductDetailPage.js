@@ -1,4 +1,4 @@
-import ProductDetail from "../features/product-list/component/ProductDetail"
+import ProductDetail from "../features/product/component/ProductDetail"
 import Navbar from "../features/navbar/Navbar"
 function ProductDetailPage() {
   return (
